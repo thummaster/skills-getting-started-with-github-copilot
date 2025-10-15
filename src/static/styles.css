@@ -88,15 +88,39 @@ section h3 {
 }
 
 .activity-card .participants-list {
-  list-style-type: disc;
-  margin-left: 20px;
+  list-style-type: none; /* hide bullets */
+  margin-left: 0;
+  padding-left: 0;
   color: #333;
   font-size: 15px;
 }
 
 .activity-card .participants-list li {
-  margin-bottom: 4px;
-  padding-left: 2px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.participant-email {
+  flex: 1 1 auto;
+  word-break: break-word;
+}
+
+.unregister-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.unregister-btn:hover {
+  background-color: rgba(198, 40, 40, 0.08);
 }
 
 .form-group {
